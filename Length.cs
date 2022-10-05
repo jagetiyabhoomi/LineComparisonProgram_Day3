@@ -8,7 +8,7 @@ namespace LineComparisonProblem
 {
     public class Length
     {
-        public static void CalulateLength()
+        public static void CompareLinesWithEquals()
         {
             Console.WriteLine("Enter the value of x1:");
             int x1 = Convert.ToInt32(Console.ReadLine());
