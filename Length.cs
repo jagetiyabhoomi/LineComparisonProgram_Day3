@@ -8,7 +8,7 @@ namespace LineComparisonProblem
 {
     public class Length
     {
-        public static void CompareLinesWithEquals()
+        public static void CompareLinesWithCompareTo()
         {
             Console.WriteLine("Enter the value of x1:");
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -31,7 +31,21 @@ namespace LineComparisonProblem
             Console.WriteLine("The Length of Line is: "+ Length1);
             Console.WriteLine("The Length of Line is: " + Length2);
 
-            Console.WriteLine(Length1.Equals(Length2));
+            int Status = Length1.CompareTo(Length2);
+            if(Status > 0)
+            {
+                Console.WriteLine("Line1 is greater than Line2");
+
+            }
+            else if(Status < 0)
+            {
+               Console.WriteLine("Line1 is Less than Line2");
+            }
+            else
+            {
+                Console.WriteLine("Line1 is equal to Line2");
+            }
+
 
         }
     }
